@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <main class="bg-body-secondary" style="height:100vh; background-image: url('/static/images/registerbg.jpg'); background-repeat: no-repeat; background-size: cover;">
+        {% include 'parts/flash_messages.html' %}
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-4"></div>
+                    <div class="col-sm-12 col-lg-4"></div>
+                    <div class="col-sm-12 col-lg-4">
+                        <div class="p-3 mt-3 border border-default bg-success-subtle rounded-2">
+                            <h3 class="">Sign Up</h3>
+                            <hr/>
+                            <div>
+                                <form action="" method="post">
+                                    <div class="mb-3">
+                                        <label class="form-label">Email address</label>
+                                        <input type="email" name="email" class="form-control bg-body-tertiary">
+                                    </div> 
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">First Name</label>
+                                        <input type="text" name="first_name" class="form-control bg-body-tertiary">
+                                    </div> 
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Last Name</label>
+                                        <input type="text" name="last_name" class="form-control bg-body-tertiary">
+                                    </div> 
+                                    <div class="mb-3">
+                                        <label for="exampleFormControlInput1" class="form-label">Password</label>
+                                        <input type="password" name="password" class="form-control bg-body-tertiary">
+                                    </div>
+                                    <div class="mb-3">
+                                        <button type="submit" class="btn btn-primary">
+                                            Register
+                                        </button>
+                                        <p class="mt-2">Already Registered? Login <a href='/login'>Here</a></p>
+                                    </div>
+                                </form>                                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <main>
+        {% include 'parts/carousel.html' %}
+
+        {% include 'parts/featured_items.html' %}
+
+        {% include 'parts/jumbotron.html' %}
+
+        {% include 'parts/featured_brands.html' %}
+
+        {% include 'parts/footer.html' %}
+
+        <div id="featured_brands_dict_script">{{ featured_brands_dict|tojson }}</div>
+    </main>
+    
+{% endblock %}
